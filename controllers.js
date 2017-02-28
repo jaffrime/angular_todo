@@ -1,4 +1,5 @@
-app.controller("controllerName", function($scope, factoryName) {
-  $scope._____ =
+app.controller("todoCtrl", function($scope, todoFactory) {
+
+  $scope.todos = todoFactory.todos;
 
 });

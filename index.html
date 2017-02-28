@@ -4,9 +4,15 @@
     <meta charset="utf-8">
     <title>Angular To-Do List</title>
   </head>
-  <body>
+  <body ng-app="angularTODO">
 
-
+    <div ng-controller="todoCtrl">
+      <ul>
+        <li ng-repeat="dos in todos">
+          {{dos}}
+        </li>
+      </ul>
+    </div>
 
 
     <script src="node_modules/angular/angular.min.js"> </script>
